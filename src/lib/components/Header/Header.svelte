@@ -194,8 +194,6 @@
 		display: flex;
 		height: 100vh;
 		width: 100vw;
-		/*background-color: #000c;*/
-
 		backdrop-filter: blur(12px);
 
 		&.menu-open {
