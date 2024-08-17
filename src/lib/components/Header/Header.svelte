@@ -3,7 +3,7 @@
 	import { twMerge } from 'tailwind-merge';
 	import Container from '$lib/components/Container.svelte';
 	import NewTabIcon from '$lib/components/ui/svgs/NewTabIcon.svelte';
-	import type { CtaButton, LinkItem } from '../../../types';
+	import type { CtaButton, LinkItem } from '../../types';
 	import RasterLogo from '$lib/components/ui/svgs/RasterLogo.svelte';
 
 	const linkStyles =
@@ -32,13 +32,13 @@
 	}
 </script>
 
-<header class="sticky top-0 z-50 bg-black/20 px-8 text-white">
+<header class="sticky top-0 z-50 bg-black/80 text-white">
 	<Container
 		className="flex items-stretch justify-between py-3 gap-5 relative border-b border-b-white/10"
 	>
 		<a href="/" class="relative z-50 flex items-center gap-2">
 			<RasterLogo />
-			<span class="max-xs:hidden title text-lg font-semibold">Raster</span>
+			<span class="title hidden text-lg font-semibold md:inline-block">Raster</span>
 		</a>
 
 		<nav
@@ -54,7 +54,7 @@
 								'hover:text-primary',
 								$page.url.pathname === url ? 'text-primary' : 'text-white'
 							)}
-							rel={newTab ? 'noOpener noReferrer' : 'noReferrer'}
+							rel={newTab ? 'noopener noreferrer external nofollow' : 'noReferrer'}
 						>
 							{label}
 
@@ -120,31 +120,33 @@
 </header>
 
 <style>
-	header:after {
-		-webkit-backdrop-filter: blur(12px);
-		backdrop-filter: blur(12px);
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		z-index: -10;
-		height: calc(100% + 32px);
-		transform: translateZ(0);
-		content: '';
-		-webkit-mask-image: -webkit-gradient(
-			linear,
-			left 70%,
-			left 100%,
-			from(rgb(0, 0, 0)),
-			to(rgba(0, 0, 0, 0))
-		);
-		mask-image: -webkit-gradient(
-			linear,
-			left 70%,
-			left 100%,
-			from(rgb(0, 0, 0)),
-			to(rgba(0, 0, 0, 0))
-		);
+	header {
+		&:after {
+			-webkit-backdrop-filter: blur(12px);
+			backdrop-filter: blur(12px);
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: -10;
+			height: calc(100% + 32px);
+			transform: translateZ(0);
+			content: '';
+			-webkit-mask-image: -webkit-gradient(
+				linear,
+				left 70%,
+				left 100%,
+				from(rgb(0, 0, 0)),
+				to(rgba(0, 0, 0, 0))
+			);
+			mask-image: -webkit-gradient(
+				linear,
+				left 70%,
+				left 100%,
+				from(rgb(0, 0, 0)),
+				to(rgba(0, 0, 0, 0))
+			);
+		}
 	}
 
 	.hamburger {

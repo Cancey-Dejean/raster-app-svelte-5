@@ -6,7 +6,7 @@
     font-family: 'Raster Neue';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/raster-neue.woff2') format('woff2');
+    src: url("https://cdn.shopify.com/s/files/1/0630/5307/0560/files/raster-neue.woff2?v=1723905948"), url('/fonts/raster-neue.woff2') format('woff2');
 }
 
 @layer base {
@@ -89,6 +89,10 @@
     }
 
     body {
-        @apply bg-black text-white font-raster;
+        @apply bg-black text-gray-500 font-raster;
+    }
+
+    section {
+        @apply py-24;
     }
 }

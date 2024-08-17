@@ -5,20 +5,31 @@
 
 <section class="py-24">
 	<Container className="flex items-center gap-12">
-		<div>
-			<h1>
-				Photography Management
+		<div class="w-full max-w-[650px]">
+			<img
+				src="/images/product-hunt.svg"
+				alt="Raster - Next-gen, AI-powered digital asset manager for modern teams | Product Hunt"
+				width="200"
+				height="44"
+				class="mb-6"
+			/>
 
-				<span class="block">→ The Future</span>
-			</h1>
+			<div class="flex max-w-[550px] flex-col gap-8">
+				<h1 class="text-8xl font-semibold text-white">
+					Photography Management
 
-			<p>
-				Raster is a digital asset manager for modern teams, saving time organizing, editing, and
-				hosting photography.
-			</p>
+					<a href="/" class="text-primary block">→ The Future</a>
+				</h1>
 
-			<Button>Button</Button>
+				<p class="text-lg">
+					Raster is a digital asset manager for modern teams, saving time organizing, editing, and
+					hosting photography.
+				</p>
+			</div>
+
+			<Button class="mt-12" href="/">Button</Button>
 		</div>
-		<div>Image</div>
+
+		<enhanced:img src="/static/images/hero-img.png?w=516" alt="Hello" />
 	</Container>
 </section>

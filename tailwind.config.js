@@ -18,6 +18,9 @@ const config = {
 			background: 'hsl(var(--background) / <alpha-value>)',
 			foreground: 'hsl(var(--foreground) / <alpha-value>)',
 
+			gray: {
+				500: 'hsl(var(--color-gray-500) / <alpha-value>)'
+			},
 			primary: {
 				DEFAULT: 'hsl(var(--color-primary) / <alpha-value>)'
 			},

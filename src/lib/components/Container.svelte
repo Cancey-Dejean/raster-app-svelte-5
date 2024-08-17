@@ -18,6 +18,6 @@
 	export let className = '';
 </script>
 
-<div class={cn('mx-auto w-full', containerSizes[size], className)}>
+<div class={cn('mx-auto w-full px-8', containerSizes[size], className)}>
 	<slot />
 </div>

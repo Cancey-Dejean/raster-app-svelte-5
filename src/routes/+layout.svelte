@@ -4,6 +4,8 @@
 	import Footer from '$lib/components/Footer/Footer.svelte';
 </script>
 
+<title>Home</title>
+
 <div class="grid min-h-[100dvh] grid-rows-[auto_1fr_auto]">
 	<Header />
 	<main>
