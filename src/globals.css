@@ -2,11 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Raster Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/raster-neue.woff2') format('woff2');
+}
+
 @layer base {
     :root {
         --color-black: 0 0% 0%;
+        --color-primary: 344 100% 59%;
         --color-white: 0 0% 100%;
         --color-gray-500: 240 4% 46%;
+
+        --font-raster: 'Raster Neue', sans-serif;
 
 
         --background: 0 0% 100%;
@@ -79,6 +89,6 @@
     }
 
     body {
-        @apply bg-black text-white;
+        @apply bg-black text-white font-raster;
     }
 }

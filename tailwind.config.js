@@ -6,6 +6,9 @@ const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	safelist: ['dark'],
 	theme: {
+		fontFamily: {
+			raster: 'var(--font-raster)'
+		},
 		colors: {
 			black: 'hsl(var(--color-black) / <alpha-value>)',
 			white: 'hsl(var(--color-white) / <alpha-value>)',
@@ -16,8 +19,7 @@ const config = {
 			foreground: 'hsl(var(--foreground) / <alpha-value>)',
 
 			primary: {
-				DEFAULT: 'hsl(var(--primary) / <alpha-value>)',
-				foreground: 'hsl(var(--primary-foreground) / <alpha-value>)'
+				DEFAULT: 'hsl(var(--color-primary) / <alpha-value>)'
 			},
 			secondary: {
 				DEFAULT: 'hsl(var(--secondary) / <alpha-value>)',
