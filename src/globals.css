@@ -22,6 +22,9 @@
 		--color-purple-500: 271 91% 65%;
 		--color-red-500: 344 100% 59%;
 
+		--color-green-400: 142 69% 58%;
+		--color-green-500: 142 71% 45%;
+
 		--font-raster: 'Raster Neue', sans-serif;
 
 		--background: 0 0% 100%;
@@ -94,7 +97,7 @@
 	}
 
 	body {
-		@apply text-gray bg-black font-raster;
+		@apply bg-black font-raster text-gray;
 	}
 
 	section {

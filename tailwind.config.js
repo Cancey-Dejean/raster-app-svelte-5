@@ -22,6 +22,10 @@ const config = {
 				DEFAULT: 'hsl(var(--color-gray-500) / <alpha-value>)',
 				300: 'hsl(var(--color-gray-300) / <alpha-value>)'
 			},
+			green: {
+				400: 'hsl(var(--color-green-400) / <alpha-value>)',
+				500: 'hsl(var(--color-green-500) / <alpha-value>)'
+			},
 			yellow: {
 				500: 'hsl(var(--color-yellow-500) / <alpha-value>)'
 			},
