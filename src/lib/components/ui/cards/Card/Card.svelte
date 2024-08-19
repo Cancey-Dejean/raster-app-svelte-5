@@ -5,7 +5,7 @@
 
 <div
 	class={cn(
-		'flex h-full flex-col overflow-hidden rounded-lg border border-white/10 bg-gray-500/10 px-12 py-16',
+		'bg-gray/10 flex h-full flex-col overflow-hidden rounded-lg border border-white/10 px-12 py-16',
 		className
 	)}
 >

@@ -144,7 +144,7 @@
 						>
 							<a href="/" class="after:absolute after:inset-0">
 								<svg
-									class="mb-2 h-10 rounded-md bg-red-500/10 p-2 text-red-500"
+									class="bg-red/10 text-red mb-2 h-10 rounded-md p-2"
 									fill="none"
 									shape-rendering="geometricPrecision"
 									stroke="currentColor"

@@ -18,7 +18,7 @@
 				<h1 class="text-8xl font-semibold text-white">
 					Photography Management
 
-					<a href="/" class="text-primary block">→ The Future</a>
+					<a href="/" class="block text-primary">→ The Future</a>
 				</h1>
 
 				<p class="text-lg">

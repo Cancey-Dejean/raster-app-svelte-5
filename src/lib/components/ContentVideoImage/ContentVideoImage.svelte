@@ -13,7 +13,7 @@
 <div class="py-12">
 	<div>
 		<h3 class="mb-4 flex items-center gap-4 text-xl text-white">
-			<span class="flex size-[46px] items-center justify-center rounded-full border border-red-500">
+			<span class="border-red flex size-[46px] items-center justify-center rounded-full border">
 				{number}
 			</span>
 			<span>{name}</span>
