@@ -5,12 +5,12 @@
 
 <section>
 	<Container>
-		<h2 class="mb-20 mb-20 max-w-[500px] text-2xl font-semibold text-white md:text-6xl">
+		<h2 class="mb-20 max-w-[500px] text-2xl font-semibold text-white md:text-6xl">
 			A photo manager unlike any other.
 		</h2>
 
 		<div class="grid grid-cols-3 gap-6">
-			<!-- Three columns-->
+			<!-- Three columns -->
 			<div class="col-span-1 col-start-1">
 				<Card>
 					<div class="flex flex-col gap-4">
@@ -18,7 +18,7 @@
 							Raster is <span class="text-yellow-500">faster.</span>
 						</h3>
 
-						<p class="max-w-[205px]">
+						<p>
 							Not only is Raster the fastest DAM on the planet, it has smart features so your team
 							performs faster too.
 						</p>
@@ -43,35 +43,42 @@
 			</div>
 
 			<div class="col-span-1 col-start-2">
-				<Card className="p-0 gap-12">
+				<Card className="p-0 gap-6">
 					<div class="flex flex-col gap-4 px-12 pt-16">
 						<h3 class="text-3xl font-semibold text-white">
 							Beautiful design inspires our best work.
 						</h3>
 
-						<p class="max-w-[205px]">
-							Raster’s user experience is built for teams that ship. No other DAM even comes close.
+						<p>
+							Raster's user experience is built for teams that ship. No other DAM even comes close.
 						</p>
 
 						<a href="/" class="hover:text-primary">Raster Design System <span>→</span></a>
 					</div>
 
-					<div class="mt-auto">
-						<enhanced:img src="/static/images/screenshare.png?w=339" alt="Hello" class="ml-12" />
-					</div>
+					<div
+						class="ml-12 mt-auto aspect-[4/3] bg-contain bg-right-bottom bg-no-repeat"
+						style="background-image: url('/images/screenshare.png');"
+					></div>
 				</Card>
 			</div>
 
 			<div class="col-span-1 col-start-3">
 				<Card className="p-0">
-					<enhanced:img src="/static/images/sky.jpeg?w=389" alt="Hello" class="aspect-[3/4]" />
+					<div
+						class="aspect-[3/4] h-full bg-cover bg-center"
+						style="background-image: url('/images/sky.jpeg');"
+					></div>
 				</Card>
 			</div>
 
 			<!-- Two Thirds columns -->
 			<div class="col-span-1 col-start-1">
 				<Card className="p-0">
-					<enhanced:img src="/static/images/card-img.jpeg?w=389" alt="Hello" class="aspect-[3/4]" />
+					<div
+						class="aspect-[3/4] h-full bg-cover bg-center"
+						style="background-image: url('/images/card-img.jpeg');"
+					></div>
 				</Card>
 			</div>
 
@@ -284,18 +291,17 @@
 
 			<div class="col-span-1 col-start-2">
 				<Card className="p-0">
-					<enhanced:img src="/static/images/cave.jpeg?w=389" alt="Hello" class="aspect-[3/4]" />
+					<!-- <enhanced:img src="/static/images/cave.jpeg?w=389" alt="Hello" class="aspect-[3/4]" /> -->
+					<div
+						class="aspect-[3/4] h-full bg-cover bg-center"
+						style="background-image: url('/images/cave.jpeg');"
+					></div>
 				</Card>
 			</div>
 
 			<div class="col-span-1 col-start-3">
 				<Card>
 					<div class="mb-auto flex flex-col gap-4">
-						<span
-							class="mb-auto self-start rounded-md border border-white/20 px-3 py-1 text-sm font-medium text-white"
-							>Shipping August 2023
-						</span>
-
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="101"
@@ -312,9 +318,7 @@
 
 					<div class="flex flex-col gap-4">
 						<h3 class="text-3xl font-semibold text-white">
-							Deploy once.
-							<br />
-							Ship forever.
+							Powered by <span class="text-purple-500">AI</span>
 						</h3>
 
 						<p>
