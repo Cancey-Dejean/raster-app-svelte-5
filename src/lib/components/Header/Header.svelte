@@ -38,11 +38,11 @@
 	>
 		<a href="/" class="relative z-50 flex items-center gap-2">
 			<RasterLogo />
-			<span class="title hidden text-lg font-semibold md:inline-block">Raster</span>
+			<span class="hidden text-lg font-semibold md:inline-block">Raster</span>
 		</a>
 
 		<nav
-			class="absolute left-1/2 hidden -translate-x-1/2 items-center justify-center gap-1 md:flex"
+			class="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center justify-center gap-1 md:flex"
 		>
 			<ul class="flex items-center gap-1">
 				{#each navItems as { url, label, newTab }}
@@ -73,7 +73,7 @@
 					<a
 						href={url}
 						rel={newTab ? 'noopener noreferrer' : 'noreferrer'}
-						class={twMerge(linkStyles, cta ? 'text-primary bg-primary/20' : 'text-white')}
+						class={twMerge(linkStyles, cta ? 'bg-primary/20 text-primary' : 'text-white')}
 					>
 						{label}
 						{#if newTab}

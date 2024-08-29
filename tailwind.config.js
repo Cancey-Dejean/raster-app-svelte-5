@@ -36,7 +36,7 @@ const config = {
 				DEFAULT: 'hsl(var(--color-red-500) / <alpha-value>)'
 			},
 			primary: {
-				DEFAULT: 'hsl(var(--color-primary) / <alpha-value>)'
+				DEFAULT: 'hsl(var(--color-red-500) / <alpha-value>)'
 			},
 			secondary: {
 				DEFAULT: 'hsl(var(--secondary) / <alpha-value>)',

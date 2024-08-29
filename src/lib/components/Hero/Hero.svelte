@@ -15,10 +15,10 @@
 			/>
 
 			<div class="flex max-w-[550px] flex-col gap-8">
-				<h1 class="text-8xl font-semibold text-white">
+				<h1 class="text-7xl font-semibold text-white">
 					Photography Management
 
-					<a href="/" class="block text-primary">→ The Future</a>
+					<a href="/" class="text-primary">→ The Future</a>
 				</h1>
 
 				<p class="text-lg">
